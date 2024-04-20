@@ -1,0 +1,137 @@
+.header {
+  .headerTopBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #000000;
+    padding: 8px;
+
+    .headerTopContent {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .label {
+        font-family: Simplon Norm;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        letter-spacing: 1px;
+        text-align: left;
+        color: #eb4c6b;
+      }
+    }
+  }
+  .sameHeadDiv {
+    width: 100%;
+    max-width: 235px;
+  }
+  .headerBottom {
+    width: 100%;
+    max-width: 100%;
+    padding: 32px;
+    border-bottom: 1px solid #e5e5e5;
+    .headerMiddleBar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 32px;
+      .logoAndMenu {
+        .menu {
+          display: none;
+        }
+      }
+
+      .logoTitle {
+        font-family: Inter;
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 43.57px;
+        letter-spacing: 1px;
+        text-align: center;
+        color: #000000;
+      }
+      .actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+
+    .headerBottomBar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 64px;
+      .tab {
+        font-family: Simplon Norm;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 1px;
+        text-align: left;
+        color: #252020;
+      }
+    }
+    .breadCrumb {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    .headerTopBar {
+      .headerTopContent {
+        &:last-child,
+        &:first-child {
+          display: none;
+        }
+        .label {
+        }
+      }
+    }
+    .sameHeadDiv {
+      width: auto;
+      max-width: auto;
+    }
+    .headerBottom {
+      padding: 10px;
+      .headerMiddleBar {
+        .logoIcon {
+          width: 20px !important;
+          height: 20px !important;
+        }
+        .logoAndMenu {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .menu {
+            display: block;
+          }
+        }
+        .logoTitle {
+          font-family: Inter;
+          font-size: 20px;
+          font-weight: 800;
+          line-height: 24.2px;
+          letter-spacing: 1px;
+          text-align: center;
+        }
+        .actions {
+          .langSelect,
+          .profileIcon {
+            display: none;
+          }
+        }
+      }
+
+      .headerBottomBar {
+        display: none;
+      }
+      .breadCrumb {
+        display: block;
+      }
+    }
+  }
+}

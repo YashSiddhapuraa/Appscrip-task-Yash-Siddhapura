@@ -1,0 +1,24 @@
+.select {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 0;
+  font-family: Simplon Norm;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  text-align: left;
+  color: #252020;
+  text-transform: uppercase;
+
+  .option {
+    text-transform: uppercase;
+    margin: 40px;
+    background: transparent;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    border: none;
+    outline: none;
+    border-radius: 0;
+    padding: 6px 0;
+  }
+}

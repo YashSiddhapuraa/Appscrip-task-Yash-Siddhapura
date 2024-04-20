@@ -1,0 +1,39 @@
+.selectWrapper {
+  padding: 20px 0px;
+  border-bottom: #e5e5e5 1px solid;
+  &:last-child {
+    border-bottom: 0px;
+  }
+  .selectHead {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      text-transform: uppercase;
+      font-weight: 600;
+      color: 252020;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+  }
+  .removeCheck {
+    color: #888792;
+    text-transform: uppercase;
+    text-decoration: underline #888792 1px;
+    margin: 20px 0;
+    cursor: pointer;
+  }
+  .options {
+    margin-bottom: 20px;
+    input {
+      margin-right: 5px;
+    }
+  }
+  .allText {
+    font-family: Simplon Norm;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    color: #252020;
+  }
+}

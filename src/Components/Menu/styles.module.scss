@@ -1,0 +1,33 @@
+.menuWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 0.5s;
+  .closeIcon {
+    position: absolute;
+    top: 36px;
+    right: 6px;
+    z-index: 2;
+  }
+  .menuDropDownWrapper {
+    position: absolute;
+    background: white;
+    top: 32px;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    transition: all ease 0.5s;
+    .tab {
+      width: 100%;
+      text-align: center;
+      font-family: Simplon Norm;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 1px;
+      color: #252020;
+      padding: 12px 0;
+    }
+  }
+}

@@ -1,0 +1,286 @@
+.footer {
+  width: 100%;
+  max-width: 100%;
+  padding: 32px;
+  background-color: #000000;
+  color: #ffffff;
+  .footerUpperSide {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 32px;
+    .leftSide {
+      width: 100%;
+      max-width: 100%;
+      .title {
+        font-family: Simplon Norm;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        color: #ffffff;
+      }
+      .subTitle {
+        font-family: Simplon Norm;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+        margin-top: 15px;
+      }
+      .emailBtnWrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 32px;
+        .emailInput {
+          padding: 6px 10px;
+          font-family: Simplon Norm;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 21.6px;
+          text-align: left;
+          &::placeholder {
+            color: #bfc8cd;
+          }
+        }
+        .subscribeBtn {
+          padding: 10px 15px;
+          color: #ffffff;
+          border-radius: 5px;
+          background-color: transparent;
+          border: 1.14px solid #ffffff;
+        }
+      }
+    }
+    .rightSide {
+      width: 100%;
+      .contactWrapper {
+        text-align: left;
+        .contactUsText {
+          font-family: Simplon Norm;
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 24px;
+        }
+        .contactNumber {
+          font-family: Simplon Norm;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19.2px;
+          margin-top: 15px;
+        }
+        .contactEmail {
+          font-family: Simplon Norm;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19.2px;
+          margin-top: 15px;
+        }
+      }
+
+      .currencyWrapper {
+        text-align: left;
+        margin-top: 32px;
+        .currencyText {
+          font-family: Simplon Norm;
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 24px;
+        }
+        .currencyWithIcon {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          margin-top: 15px;
+          .currencyIcon {
+          }
+          .square {
+            height: 0;
+            width: 0;
+            border: 2px solid #ffffff;
+            transform: rotate(45deg);
+          }
+          .currencyName {
+            font-family: Simplon Norm;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19.2px;
+            letter-spacing: 1px;
+          }
+        }
+        .desc {
+          margin-top: 15px;
+          font-family: Simplon Norm;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 14.4px;
+        }
+      }
+    }
+  }
+  .footerLowerSide {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    .lowerLeftSide {
+      width: 100%;
+      display: flex;
+      align-items: baseline;
+      .linksWrapper {
+        width: 100%;
+        max-width: 100%;
+        .linksTitle {
+          font-family: Simplon Norm;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 24px;
+        }
+        .link {
+          font-family: Simplon Norm;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 21.6px;
+          margin-top: 15px;
+        }
+      }
+      .CustomSelect {
+        display: none;
+      }
+    }
+
+    .lowerRightSide {
+      width: 100%;
+      max-width: 100%;
+      .followUsText {
+        font-family: Simplon Norm;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+      }
+      .allMediaLinks {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 15px;
+      }
+      .paymentAcceptedWrapper {
+        margin-top: 25px;
+        .paymentAcceptText {
+          font-family: Simplon Norm;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 24px;
+        }
+        .paymentCards {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .allRightsText {
+    font-family: Simplon Norm;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+    margin-top: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    .footerUpperSide {
+      flex-direction: column;
+      gap: 20px;
+      .leftSide {
+        .title {
+        }
+        .subTitle {
+        }
+        .emailBtnWrapper {
+          flex-wrap: wrap;
+          .emailInput {
+          }
+        }
+        .subscribeBtn {
+          border: 1.14px solid #ffffff;
+        }
+      }
+    }
+    .rightSide {
+      .contactWrapper {
+        .contactUsText {
+        }
+        .contactNumber {
+        }
+        .contactEmail {
+        }
+      }
+
+      .currencyWrapper {
+        .currencyText {
+        }
+        .currencyWithIcon {
+          .currencyIcon {
+          }
+          .square {
+          }
+          .currencyName {
+          }
+        }
+        .desc {
+        }
+      }
+    }
+
+    .footerLowerSide {
+      flex-direction: column;
+      gap: 20px;
+      .lowerLeftSide {
+        flex-direction: column;
+        gap: 20px;
+        .linksWrapper {
+          display: none;
+        }
+        .CustomSelect {
+          display: block;
+          width: 100%;
+          color: #ffffff;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #ffffff;
+          .options {
+            color: #ffffff;
+            background-color: #000000;
+          }
+        }
+      }
+
+      .lowerRightSide {
+        .followUsText {
+        }
+        .allMediaLinks {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .paymentAcceptedWrapper {
+          .paymentAcceptText {
+          }
+          .paymentCards {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .allRightsText {
+    }
+  }
+}
