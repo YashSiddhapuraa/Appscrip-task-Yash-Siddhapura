@@ -10,10 +10,8 @@ export { default as arrowUpIcon } from "./arrowUpIcon.svg";
 export { default as arrowDownIcon } from "./arrowDownIcon.svg";
 export { default as menuIcon } from "./menuIcon.svg";
 export { default as usIcon } from "./usIcon.svg";
-
 export { default as instagramIcon } from "./instagramIcon.svg";
 export { default as linkedinIcon } from "./linkedinIcon.svg";
-
 export { default as gPayIcon } from "./gPayIcon.svg";
 export { default as masterCardIcon } from "./masterCardIcon.svg";
 export { default as paypalIcon } from "./paypalIcon.svg";
